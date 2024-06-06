@@ -44,6 +44,7 @@ const FilterManufacturerAccordion = ({
               key={item.id}
               checked={item.checked}
               event={updateManufacturer}
+              evente={updateManufacturer}
             />
           ))}
         </ul>

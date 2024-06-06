@@ -26,6 +26,7 @@ export interface IFilterCheckboxItem {
   checked: boolean
   id?: string
   event: Event<IFilterCheckboxItem>
+  evente: (item: IFilterCheckboxItem) => void
 }
 
 export interface IFilterManufacturerAccordionProps {
