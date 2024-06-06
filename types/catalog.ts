@@ -9,6 +9,7 @@ export interface IManufacturersBlockProps {
 export interface IManufacturersBlockItemProps {
   item: IFilterCheckboxItem
   event: Event<IFilterCheckboxItem>
+  evente: (item: IFilterCheckboxItem) => void
 }
 
 export interface IQueryParams {
