@@ -11,7 +11,7 @@ import {
 import { optionStyles } from '@/styles/searchInput'
 import { IOption, SelectOptionType } from '@/types/common'
 import { createSelectOption } from '@/utils/common'
-import { categoriesOptions } from '@/utils/selectContents'
+import { categoriesOptions } from '@/utils/selectContent'
 import {
   $boilerParts,
   setBoilerPartsByPopularity,
