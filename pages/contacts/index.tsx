@@ -1,7 +1,6 @@
 import Layout from '@/components/layout/Layout'
 import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
 import ContactsPage from '@/components/templates/ContactsPage/ContactsPage'
-import ShippingPayment from '@/components/templates/ShippingPayment/ShippingPayment'
 import Head from 'next/head'
 import { useCallback } from 'react'
 

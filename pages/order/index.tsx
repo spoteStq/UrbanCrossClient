@@ -1,6 +1,5 @@
 import Layout from '@/components/layout/Layout'
 import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
-import DashboardPage from '@/components/templates/DashboardPage/DashboardPage'
 import OrderPage from '@/components/templates/OrderPage/OrderPage'
 import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
 import Head from 'next/head'
