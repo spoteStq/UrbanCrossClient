@@ -18,7 +18,9 @@ const FilterManufacturerAccordion = ({
 
   const chooseAllManufacturers = () =>
     setManufacturer(
-      manufacturersList.map((item) => ({ ...item, checked: true }))
+      setManufacturer(
+        manufacturersList.map((item) => ({ ...item, checked: true }))
+      )
     )
 
   return (
