@@ -9,6 +9,7 @@ const ManufacturersBlock = ({
   title,
   manufacturersList,
   event,
+  evente,
 }: IManufacturersBlockProps) => {
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
@@ -27,7 +28,12 @@ const ManufacturersBlock = ({
       <ul className={styles.manufacturers__list}>
         <AnimatePresence>
           {checkedItems.map((item) => (
-            <ManufacturersBlockItem key={item.id} item={item} event={event} />
+            <ManufacturersBlockItem
+              key={item.id}
+              item={item}
+              event={event}
+              evente={evente}
+            />
           ))}
         </AnimatePresence>
       </ul>

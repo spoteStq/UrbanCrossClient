@@ -3,6 +3,7 @@ import { Event } from 'effector'
 export interface IManufacturersBlockProps {
   title: string
   event: Event<IFilterCheckboxItem>
+  evente: (item: IFilterCheckboxItem) => void
   manufacturersList: IFilterCheckboxItem[]
 }
 
