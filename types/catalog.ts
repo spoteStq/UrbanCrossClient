@@ -8,7 +8,7 @@ export interface IManufacturersBlockProps {
 
 export interface IManufacturersBlockItemProps {
   item: IFilterCheckboxItem
-  event: (item: IFilterCheckboxItem) => void
+  event: Event<IFilterCheckboxItem>
 }
 
 export interface IQueryParams {
@@ -25,7 +25,7 @@ export interface IFilterCheckboxItem {
   title: string
   checked: boolean
   id?: string
-  event: (item: IFilterCheckboxItem) => void
+  event: Event<IFilterCheckboxItem>
 }
 
 export interface IFilterManufacturerAccordionProps {
