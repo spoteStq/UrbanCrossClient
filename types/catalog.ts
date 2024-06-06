@@ -1,4 +1,4 @@
-import { Event } from 'effector-next'
+import { Event } from 'effector'
 
 export interface IManufacturersBlockProps {
   title: string
