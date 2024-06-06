@@ -1,20 +1,24 @@
 import { useStore } from 'effector-react'
 import { $mode } from '@/context/mode'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { IFilterManufacturerAccordionProps } from '@/types/catalog'
+import {
+  IFilterCheckboxItem,
+  IFilterManufacturerAccordionProps,
+} from '@/types/catalog'
 import Accordion from '@/components/elements/Accordion/Accordion'
 import FilterCheckboxItem from './FilterCheckboxItem'
 import styles from '@/styles/catalog/index.module.scss'
+import { createEvent } from 'effector'
 
 const FilterManufacturerAccordion = ({
   manufacturersList,
   title,
-  updateManufacturer,
-  setManufacturer,
 }: IFilterManufacturerAccordionProps) => {
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
   const isMobile = useMediaQuery(820)
+  const setManufacturer = createEvent<IFilterCheckboxItem[]>()
+  const updateManufacturer = createEvent<IFilterCheckboxItem>()
 
   const chooseAllManufacturers = () => {
     setManufacturer(
