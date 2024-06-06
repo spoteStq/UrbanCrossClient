@@ -1,9 +1,13 @@
 import Layout from "@/components/layout/Layout";
+import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
 import ShippingPayment from "@/components/templates/ShippingPayment/ShippingPayment";
 import Head from "next/head";
+import { useCallback } from "react";
 
 function ShippingPaymentPage() {
-  
+  const getDefaultTextGenerator = useCallback(() => 'Доставка и оплата', [])
+  const getTextGenerator = useCallback((param: string) => ({}[param]), [])
+
   return (
     <>
       <Head>
@@ -15,10 +19,14 @@ function ShippingPaymentPage() {
       </Head>
       <Layout>
         <main>
+          <Breadcrumbs
+            getDefaultTextGenerator={getDefaultTextGenerator}
+            getTextGenerator={getTextGenerator}
+          />
           <ShippingPayment />
           <div className="overlay" />
         </main>
-        </Layout>
+      </Layout>
     </>
   );
 }

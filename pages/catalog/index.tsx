@@ -1,12 +1,16 @@
 import Layout from "@/components/layout/Layout";
+import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
 import CatalogPage from "@/components/templates/CatalogPage/CatalogPage";
 import useRedirectByUserCheck from "@/hooks/useRedirectByUserCheck";
 import { IQueryParams } from "@/types/catalog";
 import Head from "next/head";
+import { useCallback } from "react";
 
-function Catalog({ query }: { query: IQueryParams}) {
+function Catalog({ query }: { query: IQueryParams }) {
   const { shouldLoadContent } = useRedirectByUserCheck()
-  
+  const getDefaultTextGenerator = useCallback(() => 'Каталог', [])
+  const getTextGenerator = useCallback((param:string) =>({}[param]),[])
+
   return (
     <>
       <Head>
@@ -18,18 +22,22 @@ function Catalog({ query }: { query: IQueryParams}) {
       </Head>
       {shouldLoadContent && (
         <Layout>
-        <main>
+          <main>
+            <Breadcrumbs
+              getDefaultTextGenerator={getDefaultTextGenerator}
+              getTextGenerator={getTextGenerator}
+            />
             <CatalogPage query={query} />
-          <div className="overlay" />
-        </main>
+            <div className="overlay" />
+          </main>
         </Layout>
       )}
     </>
   );
 }
 
-export async function getServerSideProps(context: { query: IQueryParams}) {
-  return{
+export async function getServerSideProps(context: { query: IQueryParams }) {
+  return {
     props: { query: { ...context.query } },
   }
 }

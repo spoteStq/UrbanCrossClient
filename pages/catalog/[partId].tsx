@@ -7,19 +7,33 @@ import { IQueryParams } from "@/types/catalog";
 import { useStore } from "effector-react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import Custom404 from "../404";
+import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
 
 function CatalogPartPage({ query }: { query: IQueryParams }) {
   const { shouldLoadContent } = useRedirectByUserCheck()
   const boilerPart = useStore($boilerPart)
   const [error, setError] = useState(false)
   const router = useRouter()
+  const getDefaultTextGenerator = useCallback(
+    (subpath: string) => subpath.replace('catalog', 'Каталог'),
+    []
+  )
+  const getTextGenerator = useCallback((param: string) => ({}[param]), [])
+  const lastCrumb = document.querySelector('.last-crumb') as HTMLElement
 
   useEffect(() => {
     loadBoilerPart()
   }, [router.asPath])
+
+  useEffect(() => {
+    if (lastCrumb) {
+      lastCrumb.textContent = boilerPart.name
+    }
+  }, [lastCrumb, boilerPart])
+
 
   const loadBoilerPart = async () => {
     try {
@@ -51,6 +65,10 @@ function CatalogPartPage({ query }: { query: IQueryParams }) {
         shouldLoadContent && (
           <Layout>
             <main>
+              <Breadcrumbs
+                getDefaultTextGenerator={getDefaultTextGenerator}
+                getTextGenerator={getTextGenerator}
+              />
               <PartPage />
               <div className="overlay" />
             </main>

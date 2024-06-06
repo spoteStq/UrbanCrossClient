@@ -1,11 +1,17 @@
 import Layout from "@/components/layout/Layout";
+import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
 import DashboardPage from "@/components/templates/DashboardPage/DashboardPage";
 import useRedirectByUserCheck from "@/hooks/useRedirectByUserCheck";
 import Head from "next/head";
 
 function Dashboard() {
   const { shouldLoadContent } = useRedirectByUserCheck()
-  
+
+  const getDefaultTextGenerator = () => ''
+
+  const getTextGenerator = () => ''
+
+
   return (
     <>
       <Head>
@@ -17,10 +23,14 @@ function Dashboard() {
       </Head>
       {shouldLoadContent && (
         <Layout>
-        <main>
-          <DashboardPage />
-          <div className="overlay" />
-        </main>
+          <main>
+            <Breadcrumbs
+              getDefaultTextGenerator={getDefaultTextGenerator}
+              getTextGenerator={getTextGenerator}
+            />
+            <DashboardPage />
+            <div className="overlay" />
+          </main>
         </Layout>
       )}
     </>
