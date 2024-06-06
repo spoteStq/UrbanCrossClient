@@ -16,7 +16,7 @@ const ManufacturersBlockItem = ({
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
 
   const removeFilter = () =>
-    event({ checked: !item.checked, id: item.id } as IFilterCheckboxItem)
+    evente({ checked: !item.checked, id: item.id } as IFilterCheckboxItem)
 
   return (
     <motion.li
