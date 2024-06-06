@@ -4,6 +4,6 @@ const nextConfig = {
   sassOptions: {
     fiber: false,
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

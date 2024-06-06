@@ -1,15 +1,15 @@
-import Layout from "@/components/layout/Layout";
-import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
-import CatalogPage from "@/components/templates/CatalogPage/CatalogPage";
-import useRedirectByUserCheck from "@/hooks/useRedirectByUserCheck";
-import { IQueryParams } from "@/types/catalog";
-import Head from "next/head";
-import { useCallback } from "react";
+import Layout from '@/components/layout/Layout'
+import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
+import CatalogPage from '@/components/templates/CatalogPage/CatalogPage'
+import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import { IQueryParams } from '@/types/catalog'
+import Head from 'next/head'
+import { useCallback } from 'react'
 
 function Catalog({ query }: { query: IQueryParams }) {
   const { shouldLoadContent } = useRedirectByUserCheck()
   const getDefaultTextGenerator = useCallback(() => 'Каталог', [])
-  const getTextGenerator = useCallback((param:string) =>({}[param]),[])
+  const getTextGenerator = useCallback((param: string) => ({}[param]), [])
 
   return (
     <>
@@ -33,7 +33,7 @@ function Catalog({ query }: { query: IQueryParams }) {
         </Layout>
       )}
     </>
-  );
+  )
 }
 
 export async function getServerSideProps(context: { query: IQueryParams }) {

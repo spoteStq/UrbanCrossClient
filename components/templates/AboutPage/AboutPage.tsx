@@ -4,41 +4,43 @@ import { $mode } from '@/context/mode'
 import styles from '@/styles/about/index.module.scss'
 
 const AboutPage = () => {
-    const mode = useStore($mode)
-    const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
+  const mode = useStore($mode)
+  const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
 
-    return (
-        <section className={styles.about}>
-            <div className="container">
-                <h2 className={`${styles.about__title} ${darkModeClass}`}>
-                    О компании
-                </h2>
-                <div className={styles.about__inner}>
-                    <div className={`${styles.about__info} ${darkModeClass}`}>
-                        <p>
-                            Компания &quot;UrbanCross&quot; является надежным поставщиком качественной
-                            обуви для активного образа жизни. Наша миссия – предоставить клиентам удобные
-                            и стильные кроссовки по доступным ценам, удовлетворяя самые разнообразные запросы
-                            и предпочтения. Мы стремимся сделать процесс покупки максимально удобным и приятным,
-                            гарантируя быструю доставку и высокий уровень обслуживания.
-                        </p>
-                        <p>
-                            Наш ассортимент включает модели от ведущих мировых производителей, таких как Nike, Adidas, Puma,
-                            Reebok и многих других. Мы тщательно отбираем продукцию, чтобы предложить вам только самое лучшее
-                            – будь то спортивные кроссовки для бега, повседневные модели или эксклюзивные новинки из ограниченных
-                            коллекций.
-                        </p>
-                    </div>
-                    <div className={`${styles.about__img} ${styles.about__img__top}`}>
-                        <img src="/img/about-img.png" alt="image-1" />
-                    </div>
-                    <div className={`${styles.about__img} ${styles.about__img__bottom}`}>
-                        <img src="/img/about-img-2.png" alt="image-2" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className={styles.about}>
+      <div className="container">
+        <h2 className={`${styles.about__title} ${darkModeClass}`}>
+          О компании
+        </h2>
+        <div className={styles.about__inner}>
+          <div className={`${styles.about__info} ${darkModeClass}`}>
+            <p>
+              Компания &quot;UrbanCross&quot; является надежным поставщиком
+              качественной обуви для активного образа жизни. Наша миссия –
+              предоставить клиентам удобные и стильные кроссовки по доступным
+              ценам, удовлетворяя самые разнообразные запросы и предпочтения. Мы
+              стремимся сделать процесс покупки максимально удобным и приятным,
+              гарантируя быструю доставку и высокий уровень обслуживания.
+            </p>
+            <p>
+              Наш ассортимент включает модели от ведущих мировых производителей,
+              таких как Nike, Adidas, Puma, Reebok и многих других. Мы тщательно
+              отбираем продукцию, чтобы предложить вам только самое лучшее –
+              будь то спортивные кроссовки для бега, повседневные модели или
+              эксклюзивные новинки из ограниченных коллекций.
+            </p>
+          </div>
+          <div className={`${styles.about__img} ${styles.about__img__top}`}>
+            <img src="/img/about-img.png" alt="image-1" />
+          </div>
+          <div className={`${styles.about__img} ${styles.about__img__bottom}`}>
+            <img src="/img/about-img-2.png" alt="image-2" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default AboutPage

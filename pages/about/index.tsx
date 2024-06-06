@@ -1,8 +1,8 @@
-import Layout from "@/components/layout/Layout";
-import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
-import AboutPage from "@/components/templates/AboutPage/AboutPage";
-import Head from "next/head";
-import { useCallback } from "react";
+import Layout from '@/components/layout/Layout'
+import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
+import AboutPage from '@/components/templates/AboutPage/AboutPage'
+import Head from 'next/head'
+import { useCallback } from 'react'
 
 function About() {
   const getDefaultTextGenerator = useCallback(() => 'О компании', [])
@@ -28,7 +28,7 @@ function About() {
         </main>
       </Layout>
     </>
-  );
+  )
 }
 
 export default About

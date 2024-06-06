@@ -3,29 +3,28 @@ import { getQueryParamOnFirstRender, idGenerator } from './common'
 import { getBoilerPartsFx } from '@/app/api/boilerParts'
 import { setFilteredBoilerParts } from '@/context/boilerParts'
 
-
 const createManufacturerCheckboxObj = (title: string) => ({
-    title,
-    checked: false,
-    id: idGenerator(),
+  title,
+  checked: false,
+  id: idGenerator(),
 })
 
 export const boilerManufacturers = [
-    'Nike',
-    'Adidas',
-    'Puma',
-    'New Balance',
+  'Nike',
+  'Adidas',
+  'Puma',
+  'New Balance',
 ].map(createManufacturerCheckboxObj)
 
 export const partsManufacturers = [
-    '36',
-    '37',
-    '38',
-    '39',
-    '40',
-    '41',
-    '42',
-    '43',
+  '36',
+  '37',
+  '38',
+  '39',
+  '40',
+  '41',
+  '42',
+  '43',
 ].map(createManufacturerCheckboxObj)
 
 const checkPriceFromQuery = (price: number) =>

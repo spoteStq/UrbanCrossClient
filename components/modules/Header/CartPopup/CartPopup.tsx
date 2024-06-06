@@ -56,7 +56,6 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
       }
     }
 
-
     return (
       <div className={styles.cart} ref={ref}>
         {disableCart ? (

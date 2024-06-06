@@ -1,10 +1,10 @@
-import Layout from "@/components/layout/Layout";
-import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
-import DashboardPage from "@/components/templates/DashboardPage/DashboardPage";
-import OrderPage from "@/components/templates/OrderPage/OrderPage";
-import useRedirectByUserCheck from "@/hooks/useRedirectByUserCheck";
-import Head from "next/head";
-import { useCallback } from "react";
+import Layout from '@/components/layout/Layout'
+import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
+import DashboardPage from '@/components/templates/DashboardPage/DashboardPage'
+import OrderPage from '@/components/templates/OrderPage/OrderPage'
+import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import Head from 'next/head'
+import { useCallback } from 'react'
 
 function Order() {
   const { shouldLoadContent } = useRedirectByUserCheck()
@@ -14,7 +14,9 @@ function Order() {
   return (
     <>
       <Head>
-        <title>UrbanCross | {shouldLoadContent ? 'Оформление заказа' : ''}</title>
+        <title>
+          UrbanCross | {shouldLoadContent ? 'Оформление заказа' : ''}
+        </title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +35,7 @@ function Order() {
         </Layout>
       )}
     </>
-  );
+  )
 }
 
 export default Order

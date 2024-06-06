@@ -1,8 +1,8 @@
-import Layout from "@/components/layout/Layout";
-import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
-import ShippingPayment from "@/components/templates/ShippingPayment/ShippingPayment";
-import Head from "next/head";
-import { useCallback } from "react";
+import Layout from '@/components/layout/Layout'
+import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
+import ShippingPayment from '@/components/templates/ShippingPayment/ShippingPayment'
+import Head from 'next/head'
+import { useCallback } from 'react'
 
 function ShippingPaymentPage() {
   const getDefaultTextGenerator = useCallback(() => 'Доставка и оплата', [])
@@ -28,7 +28,7 @@ function ShippingPaymentPage() {
         </main>
       </Layout>
     </>
-  );
+  )
 }
 
 export default ShippingPaymentPage

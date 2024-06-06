@@ -1,16 +1,16 @@
-import { getBoilerPartFx } from "@/app/api/boilerParts";
-import Layout from "@/components/layout/Layout";
-import PartPage from "@/components/templates/PartPage/PartPage";
-import { $boilerPart, setBoilerPart } from "@/context/boilerPart";
-import useRedirectByUserCheck from "@/hooks/useRedirectByUserCheck";
-import { IQueryParams } from "@/types/catalog";
-import { useStore } from "effector-react";
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { useCallback, useEffect, useState } from "react";
-import { toast } from "react-toastify";
-import Custom404 from "../404";
-import Breadcrumbs from "@/components/modules/Bradcrumbs/Bradcrumbs";
+import { getBoilerPartFx } from '@/app/api/boilerParts'
+import Layout from '@/components/layout/Layout'
+import PartPage from '@/components/templates/PartPage/PartPage'
+import { $boilerPart, setBoilerPart } from '@/context/boilerPart'
+import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import { IQueryParams } from '@/types/catalog'
+import { useStore } from 'effector-react'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useCallback, useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
+import Custom404 from '../404'
+import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
 
 function CatalogPartPage({ query }: { query: IQueryParams }) {
   const { shouldLoadContent } = useRedirectByUserCheck()
@@ -33,7 +33,6 @@ function CatalogPartPage({ query }: { query: IQueryParams }) {
       lastCrumb.textContent = boilerPart.name
     }
   }, [lastCrumb, boilerPart])
-
 
   const loadBoilerPart = async () => {
     try {
@@ -76,7 +75,7 @@ function CatalogPartPage({ query }: { query: IQueryParams }) {
         )
       )}
     </>
-  );
+  )
 }
 
 export async function getServerSideProps(context: { query: IQueryParams }) {
