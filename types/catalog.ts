@@ -1,14 +1,18 @@
 import { Event } from 'effector-next'
 
+type FilterEvent =
+  | ((item: IFilterCheckboxItem) => void)
+  | Event<IFilterCheckboxItem>
+
 export interface IManufacturersBlockProps {
   title: string
-  event: Event<IFilterCheckboxItem>
+  event: FilterEvent
   manufacturersList: IFilterCheckboxItem[]
 }
 
 export interface IManufacturersBlockItemProps {
   item: IFilterCheckboxItem
-  event: Event<IFilterCheckboxItem>
+  event: FilterEvent
 }
 
 export interface IQueryParams {
@@ -25,7 +29,7 @@ export interface IFilterCheckboxItem {
   title: string
   checked: boolean
   id?: string
-  event: Event<IFilterCheckboxItem>
+  event: FilterEvent
 }
 
 export interface IFilterManufacturerAccordionProps {
