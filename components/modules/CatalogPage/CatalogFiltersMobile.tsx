@@ -81,10 +81,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenBoilers}
           >
-            Бренд
+            Производитель котлов
           </button>
           <FiltersPopup
-            title="Бренд"
+            title="Производитель котлов"
             resetFilterBtnDisabled={!isAnyBoilerManufacturerChecked}
             updateManufacturer={updateBoilerManufacturer}
             setManufacturer={setBoilerManufacturers}
@@ -100,10 +100,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenParts}
           >
-            Размер
+            Производитель запчастей
           </button>
           <FiltersPopup
-            title="Размер"
+            title="Производитель запчастей"
             resetFilterBtnDisabled={!isAnyPartsManufacturerChecked}
             updateManufacturer={updatePartsManufacturer}
             setManufacturer={setPartsManufacturers}
@@ -127,7 +127,7 @@ const CatalogFiltersMobile = ({
                 setPriceRange={setPriceRange}
                 setIsPriceRangeChanged={setIsPriceRangeChanged}
               />
-              <div style={{ height: 200 }} />
+              <div style={{ height: 24 }} />
             </div>
           </Accordion>
         </div>
