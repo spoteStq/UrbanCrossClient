@@ -16,12 +16,11 @@ const FilterManufacturerAccordion = ({
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
   const isMobile = useMediaQuery(820)
 
-  const chooseAllManufacturers = () =>
+  const chooseAllManufacturers = () => {
     setManufacturer(
-      setManufacturer(
-        manufacturersList.map((item) => ({ ...item, checked: true }))
-      )
+      manufacturersList.map((item) => ({ ...item, checked: true }))
     )
+  }
 
   return (
     <Accordion
