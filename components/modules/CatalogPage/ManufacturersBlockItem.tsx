@@ -1,12 +1,12 @@
-import { $mode } from '@/context/mode'
 import { useStore } from 'effector-react'
 import { motion } from 'framer-motion'
-import styles from '@/styles/catalog/index.module.scss'
+import { $mode } from '@/context/mode'
 import {
   IFilterCheckboxItem,
   IManufacturersBlockItemProps,
 } from '@/types/catalog'
 import DeleteSvg from '@/components/elements/DeleteSvg/DeleteSvg'
+import styles from '@/styles/catalog/index.module.scss'
 
 const ManufacturersBlockItem = ({
   item,
