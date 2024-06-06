@@ -220,6 +220,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                 title="Бренд:"
                 event={updateBoilerManufacturer}
                 manufacturersList={boilerManufacturers}
+                evente={updateBoilerManufacturer}
               />
             )}
           </AnimatePresence>
@@ -229,6 +230,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                 title="Размер:"
                 event={updatePartsManufacturer}
                 manufacturersList={partsManufacturers}
+                evente={updatePartsManufacturer}
               />
             )}
           </AnimatePresence>
