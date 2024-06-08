@@ -14,9 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".", // Добавьте это для правильного разрешения путей
+    "baseUrl": ".", 
     "paths": {
-      "@/*": ["src/*"] // Указывает на папку src
+      "@/*": ["src/*"] 
     },
     "plugins": [
       {
