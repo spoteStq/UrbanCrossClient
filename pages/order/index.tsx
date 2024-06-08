@@ -1,9 +1,9 @@
+import Layout from 'components/layout/Layout'
+import Breadcrumbs from 'components/modules/Bradcrumbs/Bradcrumbs'
+import OrderPage from 'components/templates/OrderPage/OrderPage'
+import useRedirectByUserCheck from 'hooks/useRedirectByUserCheck'
 import Head from 'next/head'
 import { useCallback } from 'react'
-import Layout from '@/components/layout/Layout'
-import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
-import OrderPage from '@/components/templates/OrderPage/OrderPage'
-import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 
 function Order() {
   const { shouldLoadContent } = useRedirectByUserCheck()

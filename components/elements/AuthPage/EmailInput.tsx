@@ -1,5 +1,5 @@
-import { IAuthPageInput } from '@/types/auth'
 import styles from '@/styles/auth/index.module.scss'
+import { IAuthPageInput } from 'types/auth'
 
 const EmailInput = ({ register, errors }: IAuthPageInput) => (
   <label className={styles.form__label}>

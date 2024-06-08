@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ParsedUrlQuery } from 'querystring'
 import { useMemo } from 'react'
-import { $mode } from '@/context/mode'
+import { $mode } from 'context/mode'
 import Crumb from './Crumb'
 import styles from '@/styles/breadcrumbs/index.module.scss'
 

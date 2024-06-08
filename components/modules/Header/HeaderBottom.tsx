@@ -2,13 +2,13 @@ import { useStore } from 'effector-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { $mode } from '@/context/mode'
-import SearchInput from '@/components/elements/Header/SearchInput'
 import CartPopup from './CartPopup/CartPopup'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { setDisableCart } from '@/context/shopping-cart'
 import styles from '@/styles/header/index.module.scss'
-import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
+import ModeToggler from 'components/elements/ModeToggler/ModeToggler'
+import { useMediaQuery } from 'hooks/useMediaQuery'
+import { $mode } from 'context/mode'
+import { setDisableCart } from 'context/shopping-cart'
+import SearchInput from 'components/elements/Header/SearchInput'
 
 const HeaderBottom = () => {
   const isMedia950 = useMediaQuery(950)
