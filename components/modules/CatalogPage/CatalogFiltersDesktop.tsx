@@ -6,12 +6,12 @@ import {
   setPartsManufacturers,
   updateBoilerManufacturer,
   updatePartsManufacturer,
-} from '@/context/boilerParts'
-import { $mode } from '@/context/mode'
+} from 'context/boilerParts'
+import { $mode } from 'context/mode'
 import FilterManufacturerAccordion from './FilterManufacturerAccordion'
-import Accordion from '@/components/elements/Accordion/Accordion'
+import Accordion from 'components/elements/Accordion/Accordion'
 import PriceRange from './PriceRange'
-import { ICatalogFilterDesktopProps } from '@/types/catalog'
+import { ICatalogFilterDesktopProps } from 'types/catalog'
 import spinnerStyles from '@/styles/spinner/index.module.scss'
 import styles from '@/styles/catalog/index.module.scss'
 
