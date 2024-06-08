@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
 import Link from 'next/link'
-import { IShoppingCartItem } from '@/types/shopping-cart'
-import { usePrice } from '@/hooks/usePrice'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { $mode } from '@/context/mode'
-import CartItemCounter from '@/components/elements/CartItemCounter/CartItemCounter'
-import { formatPrice } from '@/utils/common'
+import { IShoppingCartItem } from 'types/shopping-cart'
+import { usePrice } from 'hooks/usePrice'
+import { useMediaQuery } from 'hooks/useMediaQuery'
+import { $mode } from 'context/mode'
+import CartItemCounter from 'components/elements/CartItemCounter/CartItemCounter'
+import { formatPrice } from 'utils/common'
 import spinnerStyles from '@/styles/spinner/index.module.scss'
 import styles from '@/styles/order/index.module.scss'
 

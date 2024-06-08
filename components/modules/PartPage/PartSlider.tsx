@@ -2,7 +2,7 @@
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { useMediaQuery } from 'hooks/useMediaQuery'
 import styles from '@/styles/part/index.module.scss'
 
 const PartSlider = ({ images }: { images: string[] }) => {

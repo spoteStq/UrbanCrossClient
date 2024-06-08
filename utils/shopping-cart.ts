@@ -3,12 +3,12 @@ import {
   addToCartFx,
   removeFromCartFx,
   updateCartItemFx,
-} from '@/app/api/shopping-cart'
+} from 'app/api/shopping-cart'
 import {
   removeShoppingCartItem,
   updateCartItemTotalPrice,
   updateShoppingCart,
-} from '@/context/shopping-cart'
+} from 'context/shopping-cart'
 
 export const toggleCartItem = async (
   username: string,

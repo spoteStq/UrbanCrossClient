@@ -3,12 +3,12 @@ import styles from '@/styles/footer/index.module.scss'
 import FooterLogo from './FooterLogo'
 import OnlineStoreContent from './OnlineStoreContent'
 import CompanyContent from './CompanyContent'
-import MarkerSvg from '@/components/elements/MarkerSvg/MarkerSvg'
+import MarkerSvg from 'components/elements/MarkerSvg/MarkerSvg'
 import Link from 'next/link'
-import PhoneSvg from '@/components/elements/PhoneSvg/PhoneSvg'
-import MailSvg from '@/components/elements/MailSvg/MailSvg'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import Accordion from '@/components/elements/Accordion/Accordion'
+import PhoneSvg from 'components/elements/PhoneSvg/PhoneSvg'
+import MailSvg from 'components/elements/MailSvg/MailSvg'
+import { useMediaQuery } from 'hooks/useMediaQuery'
+import Accordion from 'components/elements/Accordion/Accordion'
 
 const Footer = () => {
   const isMedia750 = useMediaQuery(750)

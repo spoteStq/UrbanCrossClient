@@ -1,4 +1,4 @@
-import { IShoppingCartItem } from '@/types/shopping-cart'
+import { IShoppingCartItem } from 'types/shopping-cart'
 import { createDomain } from 'effector-next'
 
 const shoppingCart = createDomain()

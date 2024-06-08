@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { useCallback } from 'react'
-import ContactsPage from '@/components/templates/ContactsPage/ContactsPage'
-import Layout from '@/components/layout/Layout'
-import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
+import ContactsPage from 'components/templates/ContactsPage/ContactsPage'
+import Layout from 'components/layout/Layout'
+import Breadcrumbs from 'components/modules/Breadcrumbs/Breadcrumbs'
 
 function WholesaleBuyers() {
   const getDefaultTextGenerator = useCallback(() => 'Оптовым покупателям', [])

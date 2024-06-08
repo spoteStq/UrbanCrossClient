@@ -1,14 +1,9 @@
 import { useStore } from 'effector-react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { $mode } from '@/context/mode'
-import {
-  tab1Text,
-  tab2Text,
-  tab3Text,
-  tab4Text,
-} from '@/utils/shipping-payment'
+import { tab1Text, tab2Text, tab3Text, tab4Text } from 'utils/shipping-payment'
 import styles from '@/styles/shippingPayment/index.module.scss'
+import { $mode } from 'context/mode'
 
 const ShippingPayment = () => {
   const [tab1, setTab1] = useState(true)

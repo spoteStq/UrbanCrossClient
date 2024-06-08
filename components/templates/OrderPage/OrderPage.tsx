@@ -6,13 +6,13 @@ import {
   $shoppingCart,
   $totalPrice,
   setShoppingCart,
-} from '@/context/shopping-cart'
-import { formatPrice } from '@/utils/common'
-import OrderAccordion from '@/components/modules/OrderPage/OrderAccordion'
-import { $mode } from '@/context/mode'
-import { checkPaymentFx, makePaymentFx } from '@/app/api/payment'
-import { removeFromCartFx } from '@/app/api/shopping-cart'
-import { $user, $userCity } from '@/context/user'
+} from 'context/shopping-cart'
+import { formatPrice } from 'utils/common'
+import OrderAccordion from 'components/modules/OrderPage/OrderAccordion'
+import { $mode } from 'context/mode'
+import { checkPaymentFx, makePaymentFx } from 'app/api/payment'
+import { removeFromCartFx } from 'app/api/shopping-cart'
+import { $user, $userCity } from 'context/user'
 import styles from '@/styles/order/index.module.scss'
 import spinnerStyles from '@/styles/spinner/index.module.scss'
 

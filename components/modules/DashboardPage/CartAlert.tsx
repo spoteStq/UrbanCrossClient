@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { useStore } from 'effector-react'
-import { formatPrice } from '@/utils/common'
+import { formatPrice } from 'utils/common'
 import { ICartAlertProps } from '../../../types/dashboard'
-import { $mode } from '@/context/mode'
-import { $totalPrice } from '@/context/shopping-cart'
+import { $mode } from 'context/mode'
+import { $totalPrice } from 'context/shopping-cart'
 import styles from '@/styles/dashboard/index.module.scss'
 
 const CartAlert = ({ count, closeAlert }: ICartAlertProps) => {

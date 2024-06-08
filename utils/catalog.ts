@@ -1,7 +1,7 @@
 import { NextRouter } from 'next/router'
 import { getQueryParamOnFirstRender, idGenerator } from './common'
-import { getBoilerPartsFx } from '@/app/api/boilerParts'
-import { setFilteredBoilerParts } from '@/context/boilerParts'
+import { getBoilerPartsFx } from 'app/api/boilerParts'
+import { setFilteredBoilerParts } from 'context/boilerParts'
 
 const createManufacturerCheckboxObj = (title: string) => ({
   title,

@@ -2,8 +2,8 @@
 import { useStore } from 'effector-react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { $boilerPart } from '@/context/boilerPart'
-import { $mode } from '@/context/mode'
+import { $boilerPart } from 'context/boilerPart'
+import { $mode } from 'context/mode'
 import styles from '@/styles/part/index.module.scss'
 
 const PartTabs = () => {

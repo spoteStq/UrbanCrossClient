@@ -1,4 +1,4 @@
-import { IWrappedComponentProps } from '@/types/common'
+import { IWrappedComponentProps } from 'types/common'
 import {
   ForwardRefExoticComponent,
   MutableRefObject,

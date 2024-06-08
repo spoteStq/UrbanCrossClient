@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useStore } from 'effector-react'
 import Link from 'next/link'
-import CrumbArrowSvg from '@/components/elements/CrumbArrowSvg/CrumbArrowSvg'
-import { ICrumbProps } from '@/types/common'
-import { $mode } from '@/context/mode'
+import CrumbArrowSvg from 'components/elements/CrumbArrowSvg/CrumbArrowSvg'
+import { ICrumbProps } from 'types/common'
+import { $mode } from 'context/mode'
 import styles from '@/styles/breadcrumbs/index.module.scss'
 
 const Crumb = ({

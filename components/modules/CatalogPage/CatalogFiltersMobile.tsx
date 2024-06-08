@@ -1,6 +1,6 @@
 import { useStore } from 'effector-react'
-import { $mode } from '@/context/mode'
-import { ICatalogFilterMobileProps } from '@/types/catalog'
+import { $mode } from 'context/mode'
+import { ICatalogFilterMobileProps } from 'types/catalog'
 import spinnerStyles from '@/styles/spinner/index.module.scss'
 import FiltersPopupTop from './FiltersPopupTop'
 import styles from '@/styles/catalog/index.module.scss'
@@ -12,11 +12,11 @@ import {
   setPartsManufacturers,
   updateBoilerManufacturer,
   updatePartsManufacturer,
-} from '@/context/boilerParts'
+} from 'context/boilerParts'
 import { useState } from 'react'
-import Accordion from '@/components/elements/Accordion/Accordion'
+import Accordion from 'components/elements/Accordion/Accordion'
 import PriceRange from './PriceRange'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { useMediaQuery } from 'hooks/useMediaQuery'
 
 const CatalogFiltersMobile = ({
   spinner,

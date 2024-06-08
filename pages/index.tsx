@@ -1,5 +1,5 @@
-import AuthPage from '@/components/templates/AuthPage/AuthPage'
-import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import AuthPage from 'components/templates/AuthPage/AuthPage'
+import useRedirectByUserCheck from 'hooks/useRedirectByUserCheck'
 import Head from 'next/head'
 
 function Auth() {

@@ -2,22 +2,18 @@
 import { useStore } from 'effector-react'
 import { useEffect, useState } from 'react'
 import Select from 'react-select'
-import { $mode } from '@/context/mode'
-import {
-  controlStyles,
-  menuStyles,
-  selectStyles,
-} from '@/styles/catalog/select'
-import { optionStyles } from '@/styles/searchInput'
-import { IOption, SelectOptionType } from '@/types/common'
-import { createSelectOption } from '@/utils/common'
-import { categoriesOptions } from '@/utils/selectContents'
+import { $mode } from 'context/mode'
+import { controlStyles, menuStyles, selectStyles } from 'styles/catalog/select'
+import { optionStyles } from 'styles/searchInput'
+import { IOption, SelectOptionType } from 'types/common'
+import { createSelectOption } from 'utils/common'
+import { categoriesOptions } from 'utils/selectContents'
 import {
   $boilerParts,
   setBoilerPartsByPopularity,
   setBoilerPartsCheapFirst,
   setBoilerPartsExpensiveFirst,
-} from '@/context/boilerParts'
+} from 'context/boilerParts'
 import { useRouter } from 'next/router'
 
 const FilterSelect = ({

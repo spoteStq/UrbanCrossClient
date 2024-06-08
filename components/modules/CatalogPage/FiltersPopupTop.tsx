@@ -1,6 +1,6 @@
 import { useStore } from 'effector-react'
-import { $mode } from '@/context/mode'
-import { IFiltersPopupTop } from '@/types/catalog'
+import { $mode } from 'context/mode'
+import { IFiltersPopupTop } from 'types/catalog'
 import styles from '@/styles/catalog/index.module.scss'
 
 const FiltersPopupTop = ({

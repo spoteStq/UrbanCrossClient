@@ -1,8 +1,8 @@
-import { $mode } from '@/context/mode'
+import { $mode } from 'context/mode'
 import { useStore } from 'effector-react'
 import { Range, getTrackBackground } from 'react-range'
 import styles from '@/styles/catalog/index.module.scss'
-import { IPriceRangeProps } from '@/types/catalog'
+import { IPriceRangeProps } from 'types/catalog'
 
 const STEP = 0.1
 const MIN = 0

@@ -1,5 +1,5 @@
-import { $mode } from '@/context/mode'
-import { IFilterCheckboxItem } from '@/types/catalog'
+import { $mode } from 'context/mode'
+import { IFilterCheckboxItem } from 'types/catalog'
 import { useStore } from 'effector-react'
 import styles from '@/styles/catalog/index.module.scss'
 

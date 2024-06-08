@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
 import { useState } from 'react'
-import { $boilerPart } from '@/context/boilerPart'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
+import { $boilerPart } from 'context/boilerPart'
+import { useMediaQuery } from 'hooks/useMediaQuery'
 import PartImagesItem from './PartImagesItem'
 import PartSlider from './PartSlider'
 import styles from '@/styles/part/index.module.scss'

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
-import Accordion from '@/components/elements/Accordion/Accordion'
-import { $mode } from '@/context/mode'
-import { IPartAccordionProps } from '@/types/part'
+import Accordion from 'components/elements/Accordion/Accordion'
+import { $mode } from 'context/mode'
+import { IPartAccordionProps } from 'types/part'
 import styles from '@/styles/part/index.module.scss'
 
 const PartAccordion = ({ children, title }: IPartAccordionProps) => {

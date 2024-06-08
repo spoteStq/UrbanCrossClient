@@ -1,8 +1,8 @@
 import { useStore } from 'effector-react'
-import { $mode } from '@/context/mode'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import { IFilterManufacturerAccordionProps } from '@/types/catalog'
-import Accordion from '@/components/elements/Accordion/Accordion'
+import { $mode } from 'context/mode'
+import { useMediaQuery } from 'hooks/useMediaQuery'
+import { IFilterManufacturerAccordionProps } from 'types/catalog'
+import Accordion from 'components/elements/Accordion/Accordion'
 import FilterCheckboxItem from './FilterCheckboxItem'
 import styles from '@/styles/catalog/index.module.scss'
 

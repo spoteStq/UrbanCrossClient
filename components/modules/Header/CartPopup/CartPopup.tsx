@@ -3,22 +3,22 @@ import { forwardRef, useEffect } from 'react'
 import Link from 'next/link'
 import { toast } from 'react-toastify'
 import { AnimatePresence, motion } from 'framer-motion'
-import { $mode } from '@/context/mode'
-import { IWrappedComponentProps } from '@/types/common'
-import { withClickOutside } from '@/utils/withClickOutside'
-import ShoppingCartSvg from '@/components/elements/ShoppingCartSvg/ShoppingCartSvg'
+import { $mode } from 'context/mode'
+import { IWrappedComponentProps } from 'types/common'
+import { withClickOutside } from 'utils/withClickOutside'
+import ShoppingCartSvg from 'components/elements/ShoppingCartSvg/ShoppingCartSvg'
 import {
   $disableCart,
   $shoppingCart,
   $totalPrice,
   setShoppingCart,
   setTotalPrice,
-} from '@/context/shopping-cart'
+} from 'context/shopping-cart'
 import CartPopupItem from './CartPopupItem'
-import { getCartItemsFx } from '@/app/api/shopping-cart'
-import { $user } from '@/context/user'
+import { getCartItemsFx } from 'app/api/shopping-cart'
+import { $user } from 'context/user'
 import styles from '@/styles/cartPopup/index.module.scss'
-import { formatPrice } from '@/utils/common'
+import { formatPrice } from 'utils/common'
 
 const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
   ({ open, setOpen }, ref) => {
