@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
