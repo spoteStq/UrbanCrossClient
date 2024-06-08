@@ -7,8 +7,8 @@ import { useMediaQuery } from 'hooks/useMediaQuery'
 import { $mode } from 'context/mode'
 import CartItemCounter from 'components/elements/CartItemCounter/CartItemCounter'
 import { formatPrice } from 'utils/common'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
-import styles from '@/styles/order/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
+import styles from 'styles/order/index.module.scss'
 
 const OrderItem = ({ item }: { item: IShoppingCartItem }) => {
   const mode = useStore($mode)

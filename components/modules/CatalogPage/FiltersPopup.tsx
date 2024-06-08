@@ -3,7 +3,7 @@ import { $mode } from 'context/mode'
 import { IFiltersPopupProps } from 'types/catalog'
 import FiltersPopupTop from './FiltersPopupTop'
 import FilterManufacturerAccordion from './FilterManufacturerAccordion'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 
 const FiltersPopup = ({
   resetFilterBtnDisabled,

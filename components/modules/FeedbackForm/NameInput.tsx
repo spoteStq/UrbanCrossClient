@@ -1,5 +1,5 @@
 import { IFeedbackInput } from 'types/feedbackForm'
-import styles from '@/styles/feedbackForm/index.module.scss'
+import styles from 'styles/feedbackForm/index.module.scss'
 
 const NameInput = ({ register, errors, darkModeClass }: IFeedbackInput) => (
   <label className={`${styles.feedback_form__form__label} ${darkModeClass}`}>

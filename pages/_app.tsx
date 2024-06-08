@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import NextNProgress from 'nextjs-progressbar'
 import 'react-toastify/dist/ReactToastify.css'
-import '@/styles/globals.css'
+import 'styles/globals.css'
 
 const enhance = withHydrate()
 

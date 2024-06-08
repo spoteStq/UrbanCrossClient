@@ -7,8 +7,8 @@ import PlusSvg from '../PlusSvg/PlusSvg'
 import { $mode } from 'context/mode'
 import { updateCartItemFx } from 'app/api/shopping-cart'
 import { updateCartItemCount } from 'context/shopping-cart'
-import styles from '@/styles/cartPopup/index.module.scss'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import styles from 'styles/cartPopup/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 
 const CartItemCounter = ({
   totalCount,

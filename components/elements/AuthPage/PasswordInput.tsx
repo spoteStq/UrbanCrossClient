@@ -1,5 +1,5 @@
 import { IAuthPageInput } from 'types/auth'
-import styles from '@/styles/auth/index.module.scss'
+import styles from 'styles/auth/index.module.scss'
 
 const PasswordInput = ({ register, errors }: IAuthPageInput) => (
   <label className={styles.form__label}>

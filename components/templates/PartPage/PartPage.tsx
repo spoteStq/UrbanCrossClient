@@ -8,7 +8,7 @@ import { formatPrice } from 'utils/common'
 import { $shoppingCart } from 'context/shopping-cart'
 import CartHoverCheckedSvg from 'components/elements/CartHoverCheckedSvg/CartHoverCheckedSvg'
 import CartHoverSvg from 'components/elements/CartHoverSvg/CartHoverSvg'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 import { toggleCartItem } from 'utils/shopping-cart'
 import { $user } from 'context/user'
 import { useMediaQuery } from 'hooks/useMediaQuery'
@@ -22,7 +22,7 @@ import {
 } from 'context/boilerParts'
 import PartAccordion from 'components/modules/PartPage/PartAccordion'
 import { removeFromCartFx } from 'app/api/shopping-cart'
-import styles from '@/styles/part/index.module.scss'
+import styles from 'styles/part/index.module.scss'
 
 const PartPage = () => {
   const mode = useStore($mode)

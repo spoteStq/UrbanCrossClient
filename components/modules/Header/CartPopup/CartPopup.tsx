@@ -17,7 +17,7 @@ import {
 import CartPopupItem from './CartPopupItem'
 import { getCartItemsFx } from 'app/api/shopping-cart'
 import { $user } from 'context/user'
-import styles from '@/styles/cartPopup/index.module.scss'
+import styles from 'styles/cartPopup/index.module.scss'
 import { formatPrice } from 'utils/common'
 
 const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(

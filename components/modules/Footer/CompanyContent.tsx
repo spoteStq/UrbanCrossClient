@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '@/styles/footer/index.module.scss'
+import styles from 'styles/footer/index.module.scss'
 
 const CompanyContent = () => (
   <ul className={styles.footer__top__item__list}>

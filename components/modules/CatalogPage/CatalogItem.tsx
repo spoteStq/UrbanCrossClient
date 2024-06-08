@@ -11,7 +11,7 @@ import spinnerStyles from 'styles/spinner/index.module.scss'
 import { toggleCartItem } from 'utils/shopping-cart'
 import { $user } from 'context/user'
 import { removeFromCartFx } from 'app/api/shopping-cart'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 
 const CatalogItem = ({ item }: { item: IBoilerPart }) => {
   const mode = useStore($mode)

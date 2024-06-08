@@ -7,8 +7,8 @@ import { IShoppingCartItem } from '../../../../types/shopping-cart'
 import { formatPrice } from 'utils/common'
 import CartItemCounter from 'components/elements/CartItemCounter/CartItemCounter'
 import { usePrice } from 'hooks/usePrice'
-import styles from '@/styles/cartPopup/index.module.scss'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import styles from 'styles/cartPopup/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 
 const CartPopupItem = ({ item }: { item: IShoppingCartItem }) => {
   const mode = useStore($mode)

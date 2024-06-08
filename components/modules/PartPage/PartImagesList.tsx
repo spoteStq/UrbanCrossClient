@@ -5,7 +5,7 @@ import { $boilerPart } from 'context/boilerPart'
 import { useMediaQuery } from 'hooks/useMediaQuery'
 import PartImagesItem from './PartImagesItem'
 import PartSlider from './PartSlider'
-import styles from '@/styles/part/index.module.scss'
+import styles from 'styles/part/index.module.scss'
 
 const PartImagesList = () => {
   const boilerPart = useStore($boilerPart)

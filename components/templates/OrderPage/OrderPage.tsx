@@ -13,8 +13,8 @@ import { $mode } from 'context/mode'
 import { checkPaymentFx, makePaymentFx } from 'app/api/payment'
 import { removeFromCartFx } from 'app/api/shopping-cart'
 import { $user, $userCity } from 'context/user'
-import styles from '@/styles/order/index.module.scss'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import styles from 'styles/order/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 
 const OrderPage = () => {
   const mode = useStore($mode)

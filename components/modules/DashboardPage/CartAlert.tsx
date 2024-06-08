@@ -4,7 +4,7 @@ import { formatPrice } from 'utils/common'
 import { ICartAlertProps } from '../../../types/dashboard'
 import { $mode } from 'context/mode'
 import { $totalPrice } from 'context/shopping-cart'
-import styles from '@/styles/dashboard/index.module.scss'
+import styles from 'styles/dashboard/index.module.scss'
 
 const CartAlert = ({ count, closeAlert }: ICartAlertProps) => {
   const mode = useStore($mode)

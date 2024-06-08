@@ -2,7 +2,7 @@ import { useStore } from 'effector-react'
 import { $mode } from 'context/mode'
 import { AnimatePresence, motion } from 'framer-motion'
 import { IManufacturersBlockProps } from 'types/catalog'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 import ManufacturersBlockItem from './ManufacturersBlockItem'
 
 const ManufacturersBlock = ({

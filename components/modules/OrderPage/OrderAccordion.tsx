@@ -10,7 +10,7 @@ import EditSvg from 'components/elements/EditSvg/EditSvg'
 import CartPopupItem from '../Header/CartPopup/CartPopupItem'
 import OrderItem from './OrderItem'
 import { formatPrice } from 'utils/common'
-import styles from '@/styles/order/index.module.scss'
+import styles from 'styles/order/index.module.scss'
 
 const OrderAccordion = ({
   setOrderIsReady,

@@ -1,9 +1,9 @@
 import { useStore } from 'effector-react'
 import { $mode } from 'context/mode'
 import { ICatalogFilterMobileProps } from 'types/catalog'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 import FiltersPopupTop from './FiltersPopupTop'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 import FiltersPopup from './FiltersPopup'
 import {
   $boilerManufacturers,

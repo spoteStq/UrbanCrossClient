@@ -25,7 +25,7 @@ import {
   NoOptionsMessage,
   NoOptionsSpinner,
 } from '../SelectOptionsMessage/SelectOptionsMessage'
-import styles from '@/styles/header/index.module.scss'
+import styles from 'styles/header/index.module.scss'
 
 const SearchInput = () => {
   const mode = useStore($mode)

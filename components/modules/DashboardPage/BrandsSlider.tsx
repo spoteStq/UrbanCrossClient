@@ -8,7 +8,7 @@ import { $mode } from 'context/mode'
 import { useMediaQuery } from 'hooks/useMediaQuery'
 import BrandsSliderNextArrow from 'components/elements/BrandsSliderNextArrow/BrandsSliderNextArrow'
 import BrandsSliderPrevArrow from 'components/elements/BrandsSliderPrevArrow/BrandsSliderPrevArrow'
-import styles from '@/styles/dashboard/index.module.scss'
+import styles from 'styles/dashboard/index.module.scss'
 
 const BrandsSlider = () => {
   const isMedia768 = useMediaQuery(768)

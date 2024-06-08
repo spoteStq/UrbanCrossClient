@@ -6,7 +6,7 @@ import {
   IManufacturersBlockItemProps,
 } from 'types/catalog'
 import DeleteSvg from 'components/elements/DeleteSvg/DeleteSvg'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 
 const ManufacturersBlockItem = ({
   item,

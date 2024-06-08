@@ -10,7 +10,7 @@ import { useMediaQuery } from 'hooks/useMediaQuery'
 import { IDashboardSlider } from 'types/dashboard'
 import skeletonStyles from 'styles/skeleton/index.module.scss'
 import { formatPrice } from 'utils/common'
-import styles from '@/styles/dashboard/index.module.scss'
+import styles from 'styles/dashboard/index.module.scss'
 
 const DashboardSlider = ({
   items,

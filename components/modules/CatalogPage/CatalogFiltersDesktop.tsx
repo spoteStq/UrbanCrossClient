@@ -12,8 +12,8 @@ import FilterManufacturerAccordion from './FilterManufacturerAccordion'
 import Accordion from 'components/elements/Accordion/Accordion'
 import PriceRange from './PriceRange'
 import { ICatalogFilterDesktopProps } from 'types/catalog'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
-import styles from '@/styles/catalog/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 
 const CatalogFiltersDesktop = ({
   priceRange,

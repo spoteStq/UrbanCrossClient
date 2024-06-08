@@ -1,7 +1,7 @@
 import { useStore } from 'effector-react'
 import { $mode } from 'context/mode'
 import { useMediaQuery } from 'hooks/useMediaQuery'
-import styles from '@/styles/contacts/index.module.scss'
+import styles from 'styles/contacts/index.module.scss'
 import MailSvg from 'components/elements/MailSvg/MailSvg'
 import FeedbackForm from 'components/modules/FeedbackForm/FeedbackForm'
 

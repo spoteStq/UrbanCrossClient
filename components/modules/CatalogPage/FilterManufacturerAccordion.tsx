@@ -4,7 +4,7 @@ import { useMediaQuery } from 'hooks/useMediaQuery'
 import { IFilterManufacturerAccordionProps } from 'types/catalog'
 import Accordion from 'components/elements/Accordion/Accordion'
 import FilterCheckboxItem from './FilterCheckboxItem'
-import styles from '@/styles/catalog/index.module.scss'
+import styles from 'styles/catalog/index.module.scss'
 
 const FilterManufacturerAccordion = ({
   manufacturersList,

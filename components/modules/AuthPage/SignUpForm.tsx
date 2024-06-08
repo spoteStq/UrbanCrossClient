@@ -8,8 +8,8 @@ import EmailInput from 'components/elements/AuthPage/EmailInput'
 import PasswordInput from 'components/elements/AuthPage/PasswordInput'
 import { singUpFx } from 'app/api/auth'
 import { showAuthError } from 'utils/errors'
-import styles from '@/styles/auth/index.module.scss'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import styles from 'styles/auth/index.module.scss'
+import spinnerStyles from 'styles/spinner/index.module.scss'
 
 const SignUpForm = ({ switchForm }: { switchForm: () => void }) => {
   const [spinner, setSpinner] = useState(false)

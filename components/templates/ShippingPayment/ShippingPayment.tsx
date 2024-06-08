@@ -2,7 +2,7 @@ import { useStore } from 'effector-react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { tab1Text, tab2Text, tab3Text, tab4Text } from 'utils/shipping-payment'
-import styles from '@/styles/shippingPayment/index.module.scss'
+import styles from 'styles/shippingPayment/index.module.scss'
 import { $mode } from 'context/mode'
 
 const ShippingPayment = () => {
