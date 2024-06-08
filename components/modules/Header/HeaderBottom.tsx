@@ -5,11 +5,11 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { $mode } from '@/context/mode'
 import SearchInput from '@/components/elements/Header/SearchInput'
-import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
 import CartPopup from './CartPopup/CartPopup'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { setDisableCart } from '@/context/shopping-cart'
 import styles from '@/styles/header/index.module.scss'
+import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
 
 const HeaderBottom = () => {
   const isMedia950 = useMediaQuery(950)
