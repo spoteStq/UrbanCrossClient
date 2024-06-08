@@ -1,14 +1,15 @@
-import { $mode } from '@/context/mode'
+/* eslint-disable @next/next/no-img-element */
 import { useStore } from 'effector-react'
-import styles from '@/styles/header/index.module.scss'
 import Link from 'next/link'
-import SearchInput from '@/components/elements/Header/SearchInput'
-import ModeToggler from '@/components/elements/ModeToggler/modeToggler'
-import CartPopup from './CartPopup/CartPopup'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { $mode } from '@/context/mode'
+import SearchInput from '@/components/elements/Header/SearchInput'
+import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
+import CartPopup from './CartPopup/CartPopup'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import { setDisableCart } from '@/context/shopping-cart'
+import styles from '@/styles/header/index.module.scss'
 
 const HeaderBottom = () => {
   const isMedia950 = useMediaQuery(950)
@@ -35,7 +36,7 @@ const HeaderBottom = () => {
               <span
                 className={`${styles.header__logo__link__text} ${darkModeClass}`}
               >
-                UrbanCross
+                Детали для газовых котлов
               </span>
             </a>
           </Link>

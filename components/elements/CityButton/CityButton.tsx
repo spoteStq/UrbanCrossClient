@@ -54,7 +54,7 @@ const CityButton = () => {
         ) : city.length ? (
           city
         ) : (
-          'Выбрать город'
+          'Город'
         )}
       </span>
     </button>

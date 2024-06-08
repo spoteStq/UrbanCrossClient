@@ -10,13 +10,13 @@ import styles from '@/styles/catalog/index.module.scss'
 
 const ManufacturersBlockItem = ({
   item,
-  evente,
+  event,
 }: IManufacturersBlockItemProps) => {
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
 
   const removeFilter = () =>
-    evente({ checked: !item.checked, id: item.id } as IFilterCheckboxItem)
+    event({ checked: !item.checked, id: item.id } as IFilterCheckboxItem)
 
   return (
     <motion.li

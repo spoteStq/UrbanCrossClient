@@ -1,7 +1,7 @@
-import Layout from '@/components/layout/Layout'
-import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
-import ShippingPayment from '@/components/templates/ShippingPayment/ShippingPayment'
 import Head from 'next/head'
+import Layout from '@/components/layout/Layout'
+import ShippingPayment from '@/components/templates/ShippingPayment/ShippingPayment'
+import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 import { useCallback } from 'react'
 
 function ShippingPaymentPage() {
@@ -11,7 +11,7 @@ function ShippingPaymentPage() {
   return (
     <>
       <Head>
-        <title>UrbanCross | Доставка и оплата</title>
+        <title>Аква Тепмикс | Доставка и оплата</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

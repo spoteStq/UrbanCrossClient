@@ -1,16 +1,16 @@
-import { getBoilerPartFx } from '@/app/api/boilerParts'
-import Layout from '@/components/layout/Layout'
-import PartPage from '@/components/templates/PartPage/PartPage'
-import { $boilerPart, setBoilerPart } from '@/context/boilerPart'
-import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
-import { IQueryParams } from '@/types/catalog'
-import { useStore } from 'effector-react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useCallback, useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
+import { useCallback, useEffect, useState } from 'react'
+import { useStore } from 'effector-react'
+import Layout from '@/components/layout/Layout'
+import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import { IQueryParams } from '@/types/catalog'
+import { $boilerPart, setBoilerPart } from '@/context/boilerPart'
+import { getBoilerPartFx } from '@/app/api/boilerParts'
+import PartPage from '@/components/templates/PartPage/PartPage'
 import Custom404 from '../404'
-import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
+import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 
 function CatalogPartPage({ query }: { query: IQueryParams }) {
   const { shouldLoadContent } = useRedirectByUserCheck()
@@ -52,7 +52,7 @@ function CatalogPartPage({ query }: { query: IQueryParams }) {
   return (
     <>
       <Head>
-        <title>UrbanCross | {shouldLoadContent ? boilerPart.name : ''}</title>
+        <title>Аква Тепмикс | {shouldLoadContent ? boilerPart.name : ''}</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

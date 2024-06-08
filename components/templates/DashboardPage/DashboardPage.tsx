@@ -1,15 +1,15 @@
-import { getBestsellersOrNewPartsFx } from '@/app/api/boilerParts'
-import BrandsSlider from '@/components/modules/DashboardPage/BrandsSlider'
-import CartAlert from '@/components/modules/DashboardPage/CartAlert'
-import DashboardSlider from '@/components/modules/DashboardPage/DashboardSlider'
-import { $mode } from '@/context/mode'
-import { $shoppingCart } from '@/context/shopping-cart'
-import styles from '@/styles/dashboard/index.module.scss'
-import { IBoilerParts } from '@/types/boilerparts'
-import { useStore } from 'effector-react'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
+import { getBestsellersOrNewPartsFx } from '@/app/api/boilerParts'
+import BrandsSlider from '@/components/modules/DashboardPage/BrandsSlider'
+import { IBoilerParts } from '@/types/boilerparts'
+import styles from '@/styles/dashboard/index.module.scss'
+import { useStore } from 'effector-react'
+import { $mode } from '@/context/mode'
+import DashboardSlider from '@/components/modules/DashboardPage/DashboardSlider'
+import { $shoppingCart } from '@/context/shopping-cart'
+import { AnimatePresence, motion } from 'framer-motion'
+import CartAlert from '@/components/modules/DashboardPage/CartAlert'
 
 const DashboardPage = () => {
   const [newParts, setNewParts] = useState<IBoilerParts>({} as IBoilerParts)
@@ -79,7 +79,7 @@ const DashboardPage = () => {
           <BrandsSlider />
         </div>
         <h2 className={`${styles.dashboard__title} ${darkModeClass}`}>
-          Кроссовки
+          Детали для газовых котлов
         </h2>
         <div className={styles.dashboard__parts}>
           <h3 className={`${styles.dashboard__parts__title} ${darkModeClass}`}>
@@ -100,14 +100,12 @@ const DashboardPage = () => {
             О компании
           </h3>
           <p className={`${styles.dashboard__about__text} ${darkModeClass}`}>
-            Мы - команда энтузиастов, которые разделяют страсть к кроссовкам и
-            моде. Наша компания начала свой путь с целью предоставить нашим
-            клиентам лучший выбор качественной обуви для спорта, активного
-            отдыха и повседневной носки. Мы работаем над тем, чтобы наш
-            ассортимент был всегда свежим и разнообразным, чтобы удовлетворить
-            запросы каждого нашего клиента. Мы тщательно отбираем бренды и
-            модели, уделяя особое внимание качеству материалов, дизайну и
-            инновационным технологиям.
+            Инструкции и схемы помогут разобраться в эксплуатации, определить
+            неисправность и правильно выбрать запчасть для ремонта Вашего
+            газового оборудования. Купить запчасть, деталь для ремонта газового
+            котла возможно в любом населенном пункте Российской Федерации:
+            Осуществляем доставку запчасти к газовым котлам в следующие города:
+            Москва, Сан
           </p>
         </div>
       </div>

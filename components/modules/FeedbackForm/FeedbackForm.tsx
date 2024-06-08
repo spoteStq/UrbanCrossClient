@@ -27,10 +27,10 @@ const FeedbackForm = () => {
     setSpinner(true)
     emailjs
       .sendForm(
-        'service_e1k906h',
-        'template_acx3j4k',
+        'service_4406d2p',
+        'template_88thtrg',
         formRef.current,
-        'nE7J5w36aSRl6txpk'
+        'ARtfb1bp4SELm6yXa'
       )
       .then((result) => {
         setSpinner(false)

@@ -7,13 +7,13 @@ const FilterCheckboxItem = ({
   title,
   checked,
   id,
-  evente,
+  event,
 }: IFilterCheckboxItem) => {
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
 
   const handleFilterChange = () =>
-    evente({ checked: !checked, id } as IFilterCheckboxItem)
+    event({ checked: !checked, id } as IFilterCheckboxItem)
 
   return (
     <li

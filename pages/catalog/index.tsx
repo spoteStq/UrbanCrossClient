@@ -1,9 +1,9 @@
-import Layout from '@/components/layout/Layout'
-import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
-import CatalogPage from '@/components/templates/CatalogPage/CatalogPage'
-import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
-import { IQueryParams } from '@/types/catalog'
 import Head from 'next/head'
+import Layout from '@/components/layout/Layout'
+import useRedirectByUserCheck from '@/hooks/useRedirectByUserCheck'
+import CatalogPage from '@/components/templates/CatalogPage/CatalogPage'
+import { IQueryParams } from '@/types/catalog'
+import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 import { useCallback } from 'react'
 
 function Catalog({ query }: { query: IQueryParams }) {
@@ -14,7 +14,7 @@ function Catalog({ query }: { query: IQueryParams }) {
   return (
     <>
       <Head>
-        <title>UrbanCross | {shouldLoadContent ? 'Каталог' : ''}</title>
+        <title>Аква Тепмикс | {shouldLoadContent ? 'Каталог' : ''}</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

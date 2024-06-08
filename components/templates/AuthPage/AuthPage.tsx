@@ -1,9 +1,9 @@
 import { MutableRefObject, useRef } from 'react'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
-import styles from '@/styles/auth/index.module.scss'
 import SignUpForm from '@/components/modules/AuthPage/SignUpForm'
 import SignInForm from '@/components/modules/AuthPage/SignInForm'
-import ModeToggler from '@/components/elements/ModeToggler/modeToggler'
+import styles from '@/styles/auth/index.module.scss'
+import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
 import { useStore } from 'effector-react'
 import { $mode } from '@/context/mode'
 
@@ -22,11 +22,7 @@ const AuthPage = () => {
   const switchForm = () => {
     switchCtn.current.classList.add(styles.is_gx)
 
-    setTimeout(() => {
-      if (switchCtn.current) {
-        switchCtn.current.classList.remove(styles.is_gx)
-      }
-    }, 1500)
+    setTimeout(() => switchCtn.current.classList.remove(styles.is_gx), 1500)
 
     switchCtn.current.classList.toggle(styles.is_txr)
     switchCircle1.current.classList.toggle(styles.is_txr)
@@ -86,7 +82,7 @@ const AuthPage = () => {
               <p
                 className={`${styles.switch__description} ${styles.description} ${darkModeClass}`}
               >
-                Чтобы остаться на связи с нами, пожалуйста, войдите по своей
+                Чтобы оставаться на связи с нами, пожалуйста, войдите под своей
                 личной информацией
               </p>
             </>
@@ -108,7 +104,7 @@ const AuthPage = () => {
               <h2
                 className={`${styles.switch__title} ${styles.title} ${darkModeClass}`}
               >
-                Привет друг !
+                Привет, друг!
               </h2>
               <p
                 className={`${styles.switch__description} ${styles.description} ${darkModeClass}`}

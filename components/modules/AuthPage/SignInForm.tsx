@@ -1,12 +1,12 @@
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
-import NameInput from '@/components/elements/AuhthPage/NameInput'
-import { IInputs } from '@/types/auth'
-import PasswordInput from '@/components/elements/AuhthPage/PasswordInput'
-import { signInFx } from '@/app/api/auth'
-import { useRouter } from 'next/router'
-import { showAuthError } from '@/utils/errors'
 import { useStore } from 'effector-react'
+import { useRouter } from 'next/router'
+import NameInput from '@/components/elements/AuthPage/NameInput'
+import { IInputs } from '@/types/auth'
+import PasswordInput from '@/components/elements/AuthPage/PasswordInput'
+import { singInFx } from '../../../app/api/auth'
+import { showAuthError } from '@/utils/errors'
 import { $mode } from '@/context/mode'
 import styles from '@/styles/auth/index.module.scss'
 import spinnerStyles from '@/styles/spinner/index.module.scss'
@@ -26,7 +26,7 @@ const SignInForm = () => {
   const onSubmit = async (data: IInputs) => {
     try {
       setSpinner(true)
-      await signInFx({
+      await singInFx({
         url: '/users/login',
         username: data.name,
         password: data.password,

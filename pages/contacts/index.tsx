@@ -1,17 +1,17 @@
-import Layout from '@/components/layout/Layout'
-import Breadcrumbs from '@/components/modules/Bradcrumbs/Bradcrumbs'
-import ContactsPage from '@/components/templates/ContactsPage/ContactsPage'
 import Head from 'next/head'
 import { useCallback } from 'react'
+import Layout from '@/components/layout/Layout'
+import ContactsPage from '@/components/templates/ContactsPage/ContactsPage'
+import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 
-function Contact() {
+function Contacts() {
   const getDefaultTextGenerator = useCallback(() => 'Контакты', [])
   const getTextGenerator = useCallback((param: string) => ({}[param]), [])
 
   return (
     <>
       <Head>
-        <title>UrbanCross | Контакты</title>
+        <title>Аква Тепмикс | Контакты</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,4 +31,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contacts

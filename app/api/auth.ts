@@ -1,11 +1,11 @@
-import { ISignInFx, ISignUpFx } from '@/types/auth'
-import api from '../axiosClient'
-import { toast } from 'react-toastify'
 import { createEffect } from 'effector-next'
+import { toast } from 'react-toastify'
+import { ISignUpFx, ISignInFx } from '../../types/auth'
+import api from '../axiosClient'
 import { AxiosError } from 'axios'
 import { HTTPStatus } from '@/constans'
 
-export const signUpFx = createEffect(
+export const singUpFx = createEffect(
   async ({ url, username, password, email }: ISignUpFx) => {
     const { data } = await api.post(url, { username, password, email })
 
@@ -14,13 +14,13 @@ export const signUpFx = createEffect(
       return
     }
 
-    toast.success('Регистрация прошла успешна!')
+    toast.success('Регистрация прощла успешно!')
 
     return data
   }
 )
 
-export const signInFx = createEffect(
+export const singInFx = createEffect(
   async ({ url, username, password }: ISignInFx) => {
     const { data } = await api.post(url, { username, password })
 

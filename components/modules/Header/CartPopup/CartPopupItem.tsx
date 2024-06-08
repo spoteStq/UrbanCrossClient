@@ -1,20 +1,21 @@
-import { IShoppingCartItem } from '@/types/shopping-cart'
-import { useStore } from 'effector-react'
-import styles from '@/styles/cartPopup/index.module.scss'
+/* eslint-disable @next/next/no-img-element */
 import { $mode } from '@/context/mode'
+import { useStore } from 'effector-react'
 import Link from 'next/link'
 import DeleteSvg from '@/components/elements/DeleteSvg/DeleteSvg'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
+import { IShoppingCartItem } from '../../../../types/shopping-cart'
 import { formatPrice } from '@/utils/common'
 import CartItemCounter from '@/components/elements/CartItemCounter/CartItemCounter'
 import { usePrice } from '@/hooks/usePrice'
+import styles from '@/styles/cartPopup/index.module.scss'
+import spinnerStyles from '@/styles/spinner/index.module.scss'
 
 const CartPopupItem = ({ item }: { item: IShoppingCartItem }) => {
   const mode = useStore($mode)
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
   const spinnerDarkModeClass =
     mode === 'dark' ? '' : `${spinnerStyles.dark_mode}`
-  const { price, spinner, increasePrice, decreasePrice, deleteCartItem } =
+  const { price, spinner, decreasePrice, deleteCartItem, increasePrice } =
     usePrice(item.count, item.partId, item.price)
 
   return (

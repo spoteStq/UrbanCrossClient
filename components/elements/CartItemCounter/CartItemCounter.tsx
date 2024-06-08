@@ -1,14 +1,14 @@
-import { $mode } from '@/context/mode'
-import { ICartItemCounterProps } from '@/types/shopping-cart'
+import { toast } from 'react-toastify'
+import { useEffect, useState } from 'react'
 import { useStore } from 'effector-react'
-import styles from '@/styles/cartPopup/index.module.scss'
+import { ICartItemCounterProps } from '@/types/shopping-cart'
 import MinusSvg from '../MinusSvg/MinusSvg'
 import PlusSvg from '../PlusSvg/PlusSvg'
-import { useEffect, useState } from 'react'
-import spinnerStyles from '@/styles/spinner/index.module.scss'
-import { toast } from 'react-toastify'
+import { $mode } from '@/context/mode'
 import { updateCartItemFx } from '@/app/api/shopping-cart'
 import { updateCartItemCount } from '@/context/shopping-cart'
+import styles from '@/styles/cartPopup/index.module.scss'
+import spinnerStyles from '@/styles/spinner/index.module.scss'
 
 const CartItemCounter = ({
   totalCount,
@@ -21,7 +21,7 @@ const CartItemCounter = ({
   const darkModeClass = mode === 'dark' ? `${styles.dark_mode}` : ''
   const spinnerDarkModeClass =
     mode === 'dark' ? '' : `${spinnerStyles.dark_mode}`
-  const [spinner, setSpinner] = useState(false)
+  const [spinner, setPinner] = useState(false)
   const [count, setCount] = useState(initialCount)
   const [disableIncrease, setDisableIncrease] = useState(false)
   const [disableDecrease, setDisableDecrease] = useState(false)
@@ -38,7 +38,7 @@ const CartItemCounter = ({
 
   const increase = async () => {
     try {
-      setSpinner(true)
+      setPinner(true)
       increasePrice()
       setDisableDecrease(false)
       setCount(count + 1)
@@ -52,13 +52,13 @@ const CartItemCounter = ({
     } catch (error) {
       toast.error((error as Error).message)
     } finally {
-      setSpinner(false)
+      setPinner(false)
     }
   }
 
   const decrease = async () => {
     try {
-      setSpinner(true)
+      setPinner(true)
       decreasePrice()
       setDisableIncrease(false)
       setCount(count - 1)
@@ -72,7 +72,7 @@ const CartItemCounter = ({
     } catch (error) {
       toast.error((error as Error).message)
     } finally {
-      setSpinner(false)
+      setPinner(false)
     }
   }
 

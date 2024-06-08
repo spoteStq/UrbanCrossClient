@@ -1,5 +1,6 @@
-import FooterLogo from './FooterLogo'
+/* eslint-disable @next/next/no-img-element */
 import styles from '@/styles/footer/index.module.scss'
+import FooterLogo from './FooterLogo'
 import OnlineStoreContent from './OnlineStoreContent'
 import CompanyContent from './CompanyContent'
 import MarkerSvg from '@/components/elements/MarkerSvg/MarkerSvg'
@@ -64,10 +65,10 @@ const Footer = () => {
               className={`${styles.footer__top__item__list} ${styles.footer__top__item__contacts}`}
             >
               <li className={styles.footer__top__item__list__item}>
-                <Link href="/contact" passHref legacyBehavior>
+                <Link href="/contacts" passHref legacyBehavior>
                   <a className={styles.footer__top__item__list__item__link}>
                     <span>Наш адрес:</span>
-                    <span>г. Челябинск, ул. ... д. ...</span>
+                    <span>г. Москва, ул. ... д....</span>
                     <span>
                       <MarkerSvg />
                     </span>
@@ -157,7 +158,7 @@ const Footer = () => {
           {isMedia750 && <FooterLogo />}
           <div className={styles.footer__bottom__block}>
             <p className={styles.footer__bottom__block__copyright}>
-              © «UrbanCross» 2023.
+              © «Детали для газовых котлов» 2021.
             </p>
           </div>
         </div>

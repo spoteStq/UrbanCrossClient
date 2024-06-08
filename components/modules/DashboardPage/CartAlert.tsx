@@ -1,10 +1,10 @@
-import { ICartAlertProps } from '@/types/dashboard'
-import styles from '@/styles/dashboard/index.module.scss'
-import { formatPrice } from '@/utils/common'
 import Link from 'next/link'
 import { useStore } from 'effector-react'
+import { formatPrice } from '@/utils/common'
+import { ICartAlertProps } from '../../../types/dashboard'
 import { $mode } from '@/context/mode'
 import { $totalPrice } from '@/context/shopping-cart'
+import styles from '@/styles/dashboard/index.module.scss'
 
 const CartAlert = ({ count, closeAlert }: ICartAlertProps) => {
   const mode = useStore($mode)

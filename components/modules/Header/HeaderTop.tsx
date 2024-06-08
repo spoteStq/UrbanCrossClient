@@ -1,12 +1,12 @@
-import CityButton from '@/components/elements/CityButton/CityButton'
-import styles from '@/styles/header/index.module.scss'
 import Link from 'next/link'
-import ProfileDropDown from './ProfileDropDown'
-import { useMediaQuery } from '@/hooks/useMediaQuery'
-import ModeToggler from '@/components/elements/ModeToggler/modeToggler'
 import { useStore } from 'effector-react'
+import CityButton from '@/components/elements/CityButton/CityButton'
+import ProfileDropdown from './ProfileDropdown'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
+import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
 import { $mode } from '@/context/mode'
-import { usePopup } from '@/hooks/usePopup'
+import { usePopup } from '@/hooks/usePoup'
+import styles from '@/styles/header/index.module.scss'
 
 const HeaderTop = () => {
   const isMedia950 = useMediaQuery(950)
@@ -21,9 +21,9 @@ const HeaderTop = () => {
         {isMedia950 && (
           <button
             onClick={toggleOpen}
-            className={`${styles.burger_menu} 
-                        ${open ? styles.open : ''} 
-                        ${darkModeClass}`}
+            className={`${styles.burger_menu} ${
+              open ? styles.open : ''
+            } ${darkModeClass}`}
           >
             <span />
             <span />
@@ -77,7 +77,7 @@ const HeaderTop = () => {
               </Link>
             </li>
             <li className={styles.header__nav__list__item}>
-              <Link href="/wholesale-byers" passHref legacyBehavior>
+              <Link href="/wholesale-buyers" passHref legacyBehavior>
                 <a
                   className={`${styles.header__nav__list__item__link} ${darkModeClass}`}
                   onClick={closePopup}
@@ -91,7 +91,6 @@ const HeaderTop = () => {
                 <CityButton />
               </li>
             )}
-
             {isMedia950 && (
               <li className={styles.header__nav__list__item}>
                 <ModeToggler />
@@ -99,7 +98,7 @@ const HeaderTop = () => {
             )}
           </ul>
         </nav>
-        <ProfileDropDown />
+        <ProfileDropdown />
       </div>
     </div>
   )

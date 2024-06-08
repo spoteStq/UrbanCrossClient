@@ -7,4 +7,4 @@ export const setBoilerPart = boilerPart.createEvent<IBoilerPart>()
 
 export const $boilerPart = boilerPart
   .createStore<IBoilerPart>({} as IBoilerPart)
-  .on(setBoilerPart, (_, boilerPart) => boilerPart)
+  .on(setBoilerPart, (_, part) => part)

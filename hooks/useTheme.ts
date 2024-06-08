@@ -1,6 +1,6 @@
-import { $mode, setMode } from '@/context/mode'
 import { useStore } from 'effector-react'
 import { useEffect } from 'react'
+import { setMode, $mode } from '../context/mode'
 
 export const useTheme = () => {
   const mode = useStore($mode)

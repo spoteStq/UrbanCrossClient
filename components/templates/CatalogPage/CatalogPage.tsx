@@ -25,7 +25,7 @@ import { IQueryParams } from '@/types/catalog'
 import { useRouter } from 'next/router'
 import { IBoilerParts } from '@/types/boilerparts'
 import CatalogFilters from '@/components/modules/CatalogPage/CatalogFilters'
-import { usePopup } from '@/hooks/usePopup'
+import { usePopup } from '@/hooks/usePoup'
 import { checkQueryParams } from '@/utils/catalog'
 import FilterSvg from '@/components/elements/FilterSvg/FilterSvg'
 
@@ -217,20 +217,18 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
           <AnimatePresence>
             {isAnyBoilerManufacturerChecked && (
               <ManufacturersBlock
-                title="Бренд:"
+                title="Производитель котлов:"
                 event={updateBoilerManufacturer}
                 manufacturersList={boilerManufacturers}
-                evente={updateBoilerManufacturer}
               />
             )}
           </AnimatePresence>
           <AnimatePresence>
             {isAnyPartsManufacturerChecked && (
               <ManufacturersBlock
-                title="Размер:"
+                title="Производитель запчастей:"
                 event={updatePartsManufacturer}
                 manufacturersList={partsManufacturers}
-                evente={updatePartsManufacturer}
               />
             )}
           </AnimatePresence>

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { $boilerPart } from '@/context/boilerPart'
-import { $mode } from '@/context/mode'
-import styles from '@/styles/part/index.module.scss'
 import { useStore } from 'effector-react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { $boilerPart } from '@/context/boilerPart'
+import { $mode } from '@/context/mode'
+import styles from '@/styles/part/index.module.scss'
 
 const PartTabs = () => {
   const mode = useStore($mode)

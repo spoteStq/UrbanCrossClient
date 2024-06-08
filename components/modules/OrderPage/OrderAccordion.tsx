@@ -1,16 +1,16 @@
-import { $mode } from '@/context/mode'
 import { useStore } from 'effector-react'
-import styles from '@/styles/order/index.module.scss'
-import { IOrderAccordionProps } from '@/types/order'
 import { AnimatePresence, motion } from 'framer-motion'
-import DoneSvg from '@/components/elements/DoneSvg/DoneSvg'
+import { useState } from 'react'
+import { $mode } from '@/context/mode'
 import { $shoppingCart, $totalPrice } from '@/context/shopping-cart'
+import { IOrderAccordionProps } from '@/types/order'
+import DoneSvg from '@/components/elements/DoneSvg/DoneSvg'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import EditSvg from '@/components/elements/EditSvg/EditSvg'
-import { useState } from 'react'
 import CartPopupItem from '../Header/CartPopup/CartPopupItem'
 import OrderItem from './OrderItem'
 import { formatPrice } from '@/utils/common'
+import styles from '@/styles/order/index.module.scss'
 
 const OrderAccordion = ({
   setOrderIsReady,
