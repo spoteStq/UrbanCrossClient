@@ -104,7 +104,7 @@ const AuthPage = () => {
               <h2
                 className={`${styles.switch__title} ${styles.title} ${darkModeClass}`}
               >
-                Привет, друг!
+                Привет друг!
               </h2>
               <p
                 className={`${styles.switch__description} ${styles.description} ${darkModeClass}`}
