@@ -39,7 +39,7 @@ const CatalogFiltersDesktop = ({
       <div className={styles.filters__boiler_manufacturers}>
         <FilterManufacturerAccordion
           manufacturersList={boilerManufacturers}
-          title="Производитель котлов"
+          title="Бренд"
           updateManufacturer={updateBoilerManufacturer}
           setManufacturer={setBoilerManufacturers}
         />
@@ -63,7 +63,7 @@ const CatalogFiltersDesktop = ({
       <div className={styles.filters__boiler_manufacturers}>
         <FilterManufacturerAccordion
           manufacturersList={partsManufacturers}
-          title="Производитель запчастей"
+          title="Размер"
           updateManufacturer={updatePartsManufacturer}
           setManufacturer={setPartsManufacturers}
         />

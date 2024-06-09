@@ -33,9 +33,7 @@ const ContactsPage = ({ isWholesaleBuyersPage = false }) => {
           ) : (
             <ul className={`${styles.contacts__list} ${darkModeClass}`}>
               <li className={styles.contacts__list__title}>
-                <h3 className={darkModeClass}>
-                  Магазин деталей для газовых котлов
-                </h3>
+                <h3 className={darkModeClass}>UrbanCross</h3>
               </li>
               <li className={`${styles.contacts__list__item} ${darkModeClass}`}>
                 <span>Офис:</span>

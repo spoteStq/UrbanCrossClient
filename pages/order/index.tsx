@@ -14,7 +14,7 @@ function Order() {
     <>
       <Head>
         <title>
-          Аква Тепмикс | {shouldLoadContent ? 'Оформление заказа' : ''}
+          UrbanCross | {shouldLoadContent ? 'Оформление заказа' : ''}
         </title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

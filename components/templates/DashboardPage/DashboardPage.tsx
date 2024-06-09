@@ -79,7 +79,7 @@ const DashboardPage = () => {
           <BrandsSlider />
         </div>
         <h2 className={`${styles.dashboard__title} ${darkModeClass}`}>
-          Детали для газовых котлов
+          Кроссовки
         </h2>
         <div className={styles.dashboard__parts}>
           <h3 className={`${styles.dashboard__parts__title} ${darkModeClass}`}>

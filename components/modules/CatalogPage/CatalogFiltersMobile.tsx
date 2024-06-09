@@ -81,10 +81,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenBoilers}
           >
-            Производитель котлов
+            Бренд
           </button>
           <FiltersPopup
-            title="Производитель котлов"
+            title="Бренд"
             resetFilterBtnDisabled={!isAnyBoilerManufacturerChecked}
             updateManufacturer={updateBoilerManufacturer}
             setManufacturer={setBoilerManufacturers}
@@ -100,10 +100,10 @@ const CatalogFiltersMobile = ({
             className={`${styles.filters__manufacturer__btn} ${darkModeClass}`}
             onClick={handleOpenParts}
           >
-            Производитель запчастей
+            Размер
           </button>
           <FiltersPopup
-            title="Производитель запчастей"
+            title="Размер"
             resetFilterBtnDisabled={!isAnyPartsManufacturerChecked}
             updateManufacturer={updatePartsManufacturer}
             setManufacturer={setPartsManufacturers}
